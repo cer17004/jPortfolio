@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atelier Jackeline</title>
+    <link rel="stylesheet" type="text/css" href="jPortfolio1.css">
+    <link rel="stylesheet" type="text/css" href="jPortfolioMain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>   
+    <div id="navbar" width="100%">
+        <ul>
+            <li style="border-top: 2px solid #e8b923; padding-top: 8px;" >Home</li>
+            <li><a href="jPortfolio1.html">Portfolio</a></li>
+            <li><a href="jPortfolio2.html">About</a></li>
+            <li><a href="jPortfolio3.html">Mission</a></li>
+            <li><a href="jPortfolio4.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="https://goop.com/wp-content/uploads/2017/06/Design-by-Guinevere-Johnson-Photo-by-Dustin-Halleck.jpg" style="height:650px; width:100%;" >
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="https://cdn.decorilla.com/online-decorating/wp-content/uploads/2018/09/michelle-dirkse-seattle-interior-designer.jpg" style="height:650px; width:100%;">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="https://samueldesigngroup.com/wp-content/uploads/2018/03/samuel-design-group-seattle-portland.jpg" style="height:650px; width:100%;">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!--Description-->
+    <div class="description">
+        <div class="text">
+            <p>The 1st Comment</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum assumenda optio tempora debitis suscipit excepturi deleniti minus beatae quia aliquid autem nemo hic ex tenetur magnam placeat, minima totam doloribus.</p>
+        </div>
+        <div class="image">
+            <img src="https://images.squarespace-cdn.com/content/v1/550cad12e4b0ca75261a5d8c/1557958477301-N9NFTQ9KEXSBXE4XFZMU/ke17ZwdGBToddI8pDm48kPLerjwc9T00S19UIx4D7DV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWQaL5Zc965r8V2AH38PHUO8HP8IE1QJFP1I8jNvddiftNpR-oeFwj2Ae_lbqFbpxA/007-304399-11515+Warbler%27s+Ledge+007_7673532.jpg?format=2500w" style = "width: 100%;">
+        </div>
+    </div>
+  
+    <div class="description"> 
+        <div class="image">
+            <img src="https://www.interiorsbydonnahoffman.com/wp-content/uploads/2019/08/Luxury-Interior-Designer-3.jpg" style = "width: 100%;">
+        </div>
+        <div class="text">
+            <p>The 2nd Comment</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum assumenda optio tempora debitis suscipit excepturi deleniti minus beatae quia aliquid autem nemo hic ex tenetur magnam placeat, minima totam doloribus.</p>
+        </div>
+    </div>
+
+    <div id="subscribe">
+        <p>SUBSCRIBE</p>
+        <p>Sign Up With Your Email Address To Receive Updates!</p><br>
+        Name: 
+        <input type="text" name ="Name" placeholder="NAME" id="name"><br><br>
+        Email Address: 
+        <input type="text" name ="Email Address" placeholder="EMAIL" id="emailAddress"><br>
+        <button id="submitButton">SUBMIT</button>
+    </div>
+
+    <div id = "footer">
+        <div id="pfooter" style="color:lightgray;">
+            <img src="https://en.instagram-brand.com/wp-content/themes/ig-branding/prj-ig-branding/assets/images/ig-logo-black.svg">
+            <p>Los Angeles, CA</p>
+        </div>
+
+        <div id = "pfooter" style="color:lightgray;">
+            <p>8817 W. Wrangler Drive <br> Bay Shore, NY 11706</p>
+        </div>
+
+        <div id="pfooter">
+            <a href="https://www.linkedin.com/m/logout/">LinkedIn</a>
+            <a href="https://www.instagram.com/jackieurbinaa/" style="border-right: 2px solid white;"> Instagram</a>
+            <a href="https://www.pinterest.com/"> Pinterest</a>
+        </div>
+
+    </div>
+
+      
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+    </script>
+
+</body>
+</html>
