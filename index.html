@@ -14,7 +14,7 @@
 <body>   
     <div id="navbar" width="100%">       
         <ul>
-            <img src="logo.png" alt="atelier logo" width="115" height="55">
+            <img src="img/logo.png" alt="atelier logo" width="115" height="55">
             
             <li><a href="html/jPortfolio4.html">Contact</a></li>
             <li><a href="html/jPortfolio2.html">About</a></li>
@@ -27,15 +27,15 @@
     <div class="slideshow-container">
 
         <div class="mySlides fade">
-            <img src="expand3.png" style="height:650px; width:100%;">
+            <img src="img/expand3.png" style="height:650px; width:100%;">
         </div>
 
         <div class="mySlides fade">
-          <img src="expand1.png" style="height:650px; width:100%;" >
+          <img src="img/expand1.png" style="height:650px; width:100%;" >
         </div>
       
         <div class="mySlides fade">
-          <img src="expand2.png" style="height:650px; width:100%;">
+          <img src="img/expand2.png" style="height:650px; width:100%;">
         </div>
       
        
@@ -49,13 +49,13 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum assumenda optio tempora debitis suscipit excepturi deleniti minus beatae quia aliquid autem nemo hic ex tenetur magnam placeat, minima totam doloribus.</p>
         </div> 
         <div class="image">
-            <img src="main2.png" style = "width: 100%;">
+            <img src="img/main2.png" style = "width: 100%;">
         </div>
     </div>
 
     <div class="description">
         <div class="image">
-            <img src="main1.png" style = "width: 100%;">
+            <img src="img/main1.png" style = "width: 100%;">
         </div>
         <div class="text">
             <p>The 1st Comment</p>
@@ -91,17 +91,8 @@
     <script>
     var slideIndex = 1;
     showSlides(slideIndex);
-    
-    // Next/previous controls
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-    
-    // Thumbnail image controls
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-    
+    function plusSlides(n) { showSlides(slideIndex += n); }
+    function currentSlide(n) { showSlides(slideIndex = n); }
     function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
