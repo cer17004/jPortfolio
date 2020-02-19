@@ -1,0 +1,60 @@
+/****************************
+*      Contact Bar
+*****************************/
+#contact-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: grey;
+    margin-bottom: 10px;
+}
+#contact{
+    flex-grow: 1;
+    margin: 80px;
+    font-family: 'Economica', sans-serif;
+    text-align: center;
+}
+#contact h3{
+    font-size: 30px;
+}
+
+#contact p{
+    font-size: 20px;
+}
+
+#contactButton{
+    color: grey;
+    border: 2px solid grey;
+    background-color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#contactButton:hover{
+    background-color: grey;
+    color: white;
+}
+
+
+/*********************************
+*         Contact Title 
+**********************************/
+#contactTitle{
+    background-image: url("http://www.livingwithlolo.com/wp-content/uploads/2017/05/187A5650-1140x350.jpg");
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    color: grey;
+    border: 2px solid grey;
+    font-family: 'Quattrocento', serif;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(255,255,255,0.5);
+}
