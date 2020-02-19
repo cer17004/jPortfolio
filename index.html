@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atelier Jackeline</title>
+    <link rel="stylesheet" type="text/css" href="css/jPortfolio.css">
+    <link rel="stylesheet" type="text/css" href="css/jPortfolioMain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Economica&display=swap" rel="stylesheet">
+</head>
+<body>   
+    <div id="navbar" width="100%">       
+        <ul>
+            <img src="logo.png" alt="atelier logo" width="115" height="55">
+            
+            <li><a href="html/jPortfolio4.html">Contact</a></li>
+            <li><a href="html/jPortfolio2.html">About</a></li>
+            <li><a href="html/jPortfolio1.html">Portfolio</a></li>
+            <li style="border-top: 2px solid #e8b923; padding-top: 8px;" >Home</li>
+
+        </ul>
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="expand3.png" style="height:650px; width:100%;">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="expand1.png" style="height:650px; width:100%;" >
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="expand2.png" style="height:650px; width:100%;">
+        </div>
+      
+       
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="description">
+        <div class="text">
+            <p>The 2nd Comment</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum assumenda optio tempora debitis suscipit excepturi deleniti minus beatae quia aliquid autem nemo hic ex tenetur magnam placeat, minima totam doloribus.</p>
+        </div> 
+        <div class="image">
+            <img src="main2.png" style = "width: 100%;">
+        </div>
+    </div>
+
+    <div class="description">
+        <div class="image">
+            <img src="main1.png" style = "width: 100%;">
+        </div>
+        <div class="text">
+            <p>The 1st Comment</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum assumenda optio tempora debitis suscipit excepturi deleniti minus beatae quia aliquid autem nemo hic ex tenetur magnam placeat, minima totam doloribus.</p>
+        </div>
+    </div>
+
+    <div id="subscribe">
+        <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+        <input type="text" name ="Name" placeholder="NAME:" id="name"><br>
+        <input type="text" name ="Email Address" placeholder="EMAIL:" id="emailAddress"><br>
+        <button id="submitButton">SUBMIT</button>
+    </div>
+
+    <div id = "footer">
+        <div id="pfooter" style="color:lightgray;">
+            <p>Located In:</p>
+            <p>Los Angeles, CA</p>
+        </div>
+
+        <div id = "pfooter" style="color:lightgray;">
+            <p>atelierjackeline@gmail.com</p>
+        </div>
+
+        <div id="pfooter">
+            <a href="https://www.linkedin.com/in/jackelineu/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/jackieurbinaa/" target="_blank"> Instagram</a>
+        </div>
+
+    </div>
+
+      
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+    </script>
+
+</body>
+</html>
