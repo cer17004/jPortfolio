@@ -1,5 +1,3 @@
 # Jackie's Portfolio 
 
-This is Jackie's portfolio for her class project. Building a basic web site to display her creative ideas. 
-
-## This is my work 
+This is a portfolio meant to display this student's projects as well as allow future employeers to come into contact with the student. 
