@@ -1,0 +1,119 @@
+/**************************
+*    Header Project
+***************************/
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-container{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Economica', sans-serif;
+    font-size: 42px;
+    border-bottom: 2px solid #e8b923;
+}
+/************************
+*  Text Info
+*************************/
+#titleInfo p{
+    margin: auto;
+    width: 800px;
+    padding-top: 20px;
+    font-family: 'Economica', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*********************
+*   Project Gallery
+**********************/
+.wrapper { 
+    width: 1170px;
+    margin: 5% auto;
+}       
+
+.wrapper a {
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 31%;
+    margin: 10px;
+    display: inline-block;
+    overflow: hidden; 
+}
+
+.wrapper a:before,
+.wrapper a:after {
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    content: "";
+    display: block;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    width: 50%;
+    z-index: 3;
+} 
+        
+.wrapper a img {
+    position: relative;
+    z-index: 3;   
+    border: none;
+    display: block;
+    animation: animate-3 500ms ease-in-out forwards;
+}
+
+.wrapper a:before {
+    left: 0;
+}
+
+.wrapper a:after {
+    right: 0;
+}
+
+.wrapper a img {
+    border: none;
+    display: block;
+    z-index: 1;
+}
+
+.wrapper a:before,
+.wrapper a:after,
+.wrapper a span {
+    transition: all 500ms ease; 
+}
+
+.wrapper a span {
+    color: white;
+    background-color: rgba(208,209,210,0.9);
+    font-family: 'Quattrocento', serif;
+    bottom: 15%;
+    display: block;
+    opacity: 0;
+    padding: 10px 25px;
+    position: absolute;
+    text-align: center;
+    width: 70%;
+    z-index: 2;
+    left: 8%;
+    font-size: 20px;
+    transform: scale(0);
+}
+
+.wrapper a:hover:before {
+    left: -50%;
+}
+
+.wrapper a:hover:after {
+    right: -50%;
+}
+
+.wrapper a:hover span {
+    opacity: 1;
+    transition: all 500ms ease; 
+    transform: scale(1);
+}
