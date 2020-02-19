@@ -1,0 +1,127 @@
+/**********************
+*   Image Slideshow  
+***********************/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #e8b923;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4.0s;
+  animation-name: fade;
+  animation-duration: 4.0s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+/****************************
+*   Description Sections 
+*****************************/
+.description{
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text{
+  text-align: center;
+  padding: 40px;
+  width: 50%;
+  font-family:  'Playfair Display', serif;
+}
+
+.text p:first-child{
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 2px solid #e8b923; 
+}
+
+/****************************
+*   Subscription Section
+*****************************/
+#subscribe{
+  text-align: center;
+  margin: 20px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#subscribe > p:first-child{
+  font-size: 15px;
+}
+
+#subscribe > input{
+  margin: 8px;
+  padding: 4px;
+}
+
+#name{
+  margin-left: 60px;
+}
+
+#submitButton{
+  border-color: black;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  margin: 15px;
+}
+
+#submitButton:hover{
+  color: black;
+  background-color:white;
+}
+
+.image{
+  width: 70%;
+  padding: 40px;
+}
